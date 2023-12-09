@@ -1,5 +1,6 @@
 import Link from "next/link";
 import "./globals.css";
+import MainHeader from "@/components/MainHeader";
 
 export const metadata = {
   title: "NextLevel Food",
@@ -30,11 +31,7 @@ export default function RootLayout({ children }) {
             ></path>
           </svg>
         </div>
-
-        <div>
-          <Link href='/community'>community</Link>
-          <Link href='/meals'>meals</Link>
-        </div>
+        <MainHeader />
         {children}
       </body>
     </html>
