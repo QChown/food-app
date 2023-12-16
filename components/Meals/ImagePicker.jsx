@@ -46,6 +46,7 @@ function ImagePicker({ name, label }) {
           accept='image/png, image/jpeg'
           name={name}
           onChange={handleImageChange}
+          required
         />
         <button
           onClick={handleImagePicker}
